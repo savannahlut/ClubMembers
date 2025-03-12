@@ -15,7 +15,7 @@ public class MemberInfo
     }
 
     public String toString(){
-        return name + "-" + gradYear + "-" + hasGoodStanding;
+        return "*" + name + "-" + gradYear + "-" + hasGoodStanding + "*";
     }
 
     /** Returns the graduation year of the club member. */

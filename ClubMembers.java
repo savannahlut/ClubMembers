@@ -3,6 +3,17 @@ public class ClubMembers {
 
     private ArrayList<MemberInfo> memberList;
 
+    public ClubMembers(ArrayList<MemberInfo> memberList){
+        this.memberList = memberList;
+    }
+    public ClubMembers(){
+        memberList = new ArrayList<MemberInfo>();
+    }
+
+    public ArrayList<MemberInfo> returnMembers(){
+        return memberList;
+    }
+
     /** Adds new club members to memberList, as described in part (a).
     * Precondition: names is a non-empty array.
     */
@@ -25,6 +36,7 @@ public class ClubMembers {
                     newList.add(memberList.get(i));
                 }
                 memberList.remove(i);
+                i--;
             }
         }
         return newList;
